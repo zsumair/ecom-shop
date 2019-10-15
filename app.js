@@ -1,9 +1,20 @@
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
+const mongoose = require('mongoose');
 
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
+
+mongoose.connect(
+  'mongodb+srv://<Yourusername>:' +
+    process.env.MONGO_ATLAS_PWD +
+    '@sideproj-8gcv5.mongodb.net/ecomshop?retryWrites=true&w=majority',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  }
+);
 
 app.use(morgan('dev'));
 
