@@ -3,5 +3,6 @@
 ## API testing with REST Client
 api.http
 
-## Other Files
-nodemon.json
+uploads/
+
+## /nodemon.json

@@ -1,5 +1,5 @@
 {
   "env": {
-    "MONGO_ATLAS_PWD": "Asphalt19"
+    "MONGO_ATLAS_PWD": "<Password>"
   }
 }
